@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <VSNode splits="0.020785948795031796 0.11165919227079896">
+        <CNode>
+            <Component label="Class hierarchy">
+                <Property id="pluginId" value="org.protege.editor.owl.OWLAssertedClassHierarchy"/>
+            </Component>
+        </CNode>
+        <CNode>
+            <Component label="SADVizViewer">
+                <Property id="pluginId" value="SADViz.SADVizView"/>
+            </Component>
+        </CNode>
+    </VSNode>
+</layout>

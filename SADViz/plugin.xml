@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+
+<plugin>
+
+	<!-- tab -->
+
+	<extension id="SADVizTab" point="org.protege.editor.core.application.WorkspaceTab">
+		<label value="SADViz"/>
+		<class value="template.SADVizTab"/>
+		<index value="X"/>
+		<editorKitId value="OWLEditorKit"/>
+		<defaultViewConfigFileName value="viewconfig.xml"/>
+   </extension>
+
+	<!-- view -->
+    <extension id="SADVizView"
+               point="org.protege.editor.core.application.ViewComponent">
+        <label value="SADVizViewer"/>
+        <class value="template.SADVizView"/>
+       	<headerColor value="@org.protege.ontologycolor"/>
+        <category value="@org.protege.ontologycategory"/>
+    </extension>
+
+  	<!-- menu -->
+     <extension id="example.menu"
+              point="org.protege.editor.core.application.EditorKitMenuAction">
+       <name value="Example..."/>
+       <class value="template.SADVizMenu"/>
+       <toolTip value="A menu plugin to bootstrap the new plugin process"/>
+       <path value="org.protege.editor.owl.menu.tools/SlotZ-Z"/>
+       <editorKitId value="OWLEditorKit"/>
+   </extension>
+    
+</plugin>
